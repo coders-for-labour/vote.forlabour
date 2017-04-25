@@ -13,7 +13,7 @@ $(function(){
         var latitude = location.coords.latitude;
         var longitude = location.coords.longitude;
 
-        $.get('http://postcodes.io/postcodes?lon=' + longitude + '&lat=' + latitude)
+        $.get('https://postcodes.io/postcodes?lon=' + longitude + '&lat=' + latitude)
           .done(function(response, xhr, dfsdfdsf) {
             if (response.result) {
               var bestGuess = response.result[0].postcode;
