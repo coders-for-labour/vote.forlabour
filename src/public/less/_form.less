@@ -3,13 +3,14 @@
   background: #e4003b url('/img/location-icon.png') no-repeat 50% 50%;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   height: 40px;
   margin: 0 0 50px;
   padding: 0;
   text-indent: -9999px;
   width: 40px;
 
-  &:after {
+  &::after {
     background: url('/img/use-location.png') no-repeat 50% 50%;
     content: '';
     display: block;
@@ -29,6 +30,7 @@
 
 label {
   display: block;
+  font-size: 1.4rem;
   margin: 0 0 10px;
 }
 
@@ -47,6 +49,7 @@ button[type="submit"] {
   background: #e4003b;
   border: none;
   color: #fff;
+  cursor: pointer;
   display: block;
   font-family: inherit;
   font-size: 2.1rem;
@@ -70,4 +73,29 @@ button[type="submit"] {
 
 .form.is-loading .loading-message {
   display: block;
+}
+
+
+@media (min-width: 800px) {
+  .form {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+  }
+
+  input[type="text"] {
+    float: left;
+    width: 360px;
+  }
+
+  [data-behaviour='geo-locate'] {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    height: 60px;
+  }
+
+  button[type=submit] {
+    margin: -40px auto 0;
+    width: 300px;
+  }
 }

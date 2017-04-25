@@ -26,13 +26,15 @@
   background-image: linear-gradient(#aa002f 0%, #c50037 100%);
   display: block;
 
-
   ul {
     display: flex;
 
-    li{
+    li {
       flex: 1;
+      font-size: 1.4rem;
+      font-weight: bold;
       text-align: center;
+      text-transform: uppercase;
 
       span {
         display: none;
@@ -51,7 +53,38 @@
 #why,
 #who,
 #how {
-  padding: 5px 10px;
+  padding: 10px;
+
+  h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+  }
+
+  ol,
+  ul {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 15px;
+
+    li {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+    }
+  }
+
+  ol li {
+    list-style: decimal;
+  }
+
+  ul li {
+    list-style: disc;
+  }
+
 }
 
 #why,
@@ -63,6 +96,10 @@
   background: #fff url('/img/bg.png') no-repeat 50% 50%;
   background-size: cover;
   color: #a5002d;
+
+  #result {
+    flex: 1;
+  }
 }
 
 .footer {
@@ -71,17 +108,31 @@
   display: block;
   padding: 10px;
   text-align: center;
+
+  p {
+    left: -9999px;
+    position: absolute;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+  }
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 800px) {
   .nav {
 
     ul {
 
       li {
+        font-size: 2.4rem;
 
         span {
           display: block;
+          font-size: 1rem;
         }
       }
     }
@@ -99,10 +150,30 @@
       .title {
         border-right: 1px solid #e4003b;
         flex: none;
+        font-size: 6rem;
         margin: 10px 10px 10px 0;
         padding: 10px;
+        text-align: center;
         width: 200px;
+
+        span {
+          display: block;
+          font-size: 6rem;
+          line-height: 60px;
+        }
       }
+    }
+
+    .title + div {
+      padding: 0 20px;
+    }
+  }
+
+  .footer {
+    padding: 20px 0;
+
+    img {
+      width: 200px;
     }
   }
 }
