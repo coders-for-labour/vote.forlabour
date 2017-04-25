@@ -1,0 +1,73 @@
+[data-behaviour='geo-locate'] {
+  display: none;
+  background: #e4003b url('/img/location-icon.png') no-repeat 50% 50%;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  margin: 0 0 50px;
+  padding: 0;
+  text-indent: -9999px;
+  width: 40px;
+
+  &:after {
+    background: url('/img/use-location.png') no-repeat 50% 50%;
+    content: '';
+    display: block;
+    height: 70px;
+    margin: 0 0 0 50px;
+    width: 125px;
+  }
+}
+
+.has-geolocation [data-behaviour='geo-locate'] {
+  display: block;
+}
+
+.form {
+  position: relative;
+}
+
+label {
+  display: block;
+  margin: 0 0 10px;
+}
+
+input[type='text'] {
+  background: #fff;
+  border: 1px solid #e4003b;
+  font-family: inherit;
+  font-size: 2.1rem;
+  height: 60px;
+  padding: 0 10px;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background: #e4003b;
+  border: none;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 2.1rem;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form .loading-message {
+  background: rgba(255, 255, 255, 0.6);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form.is-loading .loading-message {
+  display: block;
+}

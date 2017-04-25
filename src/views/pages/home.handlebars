@@ -1,33 +1,50 @@
-<header>
-  <h1>Vote for Labour</h1>
+<header class="header">
+  <div class="container">
+    <h1>Vote for Labour</h1>
+    <img src="/img/logo.png" alt="Vote for Labour" />
+  </div>
 </header>
-<nav role="navigation">
-  <ul>
-    <li><a href="#why"><span>Why</span> should I vote for Labour?</a></li>
-    <li><a href="#who"><span>Who</span> is my local candidate?</a></li>
-    <li><a href="#how"><span>How</span> do I register to vote?</a></li>
-  </ul>
+<nav role="navigation" class="nav">
+  <div class="container">
+    <ul>
+      <li><a href="#why">Why <span>should I vote for Labour?</span></a></li>
+      <li><a href="#who">Who <span>is my local candidate?</span></a></li>
+      <li><a href="#how">How <span>do I register to vote?</span></a></li>
+    </ul>
+  </div>
 </nav>
-<dl>
-  <dt id="why"><span>Why</span> should I vote for Labour?</dt>
-  <dd>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </dd>
-  <dt id="why"><span>Who</span> is my local candidate?</dt>
-  <dd id="result">
-    <form action="/" method="POST" class="form">
-      <label>Enter your postcode below to find your local candidate:</label>
-      <button type="button" data-behaviour="geo-locate">Get my location</button>
-      <input type="text" name="postcode" id="postcode" autocomplete="postal-code" required />
-      <button type="submit">Search</button>
-      <div class="loading-message"></div>
-    </form>
-  </dd>
-  <dt id="how"><span>How</span> do I register to vote?</dt>
-  <dd>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </dd>
-</dl>
-<footer>
+<ul class="content">
+  <li id="why">
+    <div class="container">
+      <h2 class="title"><span>Why</span> should I vote for Labour?</h2>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </li>
+  <li id="who">
+    <div class="container">
+      <h2 class="title"><span>Who</span> is my local candidate?</h2>
+      <div id="result">
+        <form action="/" method="POST" class="form">
+          <label>Enter your postcode below to find your local candidate:</label>
+          <input type="text" name="postcode" id="postcode" autocomplete="postal-code" required />
+          <button type="button" data-behaviour="geo-locate">Get my location</button>
+          <button type="submit">Search</button>
+          <div class="loading-message"></div>
+        </form>
+      </div>
+    </div>
+  </li>
+  <li id="how">
+    <div class="container">
+      <h2 class="title"><span>How</span> do I register to vote?</h2>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </li>
+</ul>
+<footer class="footer">
   <p>Made by volunteers</p>
 </footer>

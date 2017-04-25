@@ -15,35 +15,17 @@ html {
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Tahoma;
+  background: #a5002d;
+  color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Verdana, Tahoma;
   font-size: 1.2rem;
 }
 
-
-[data-behaviour='geo-locate'] {
-  display: none;
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.has-geolocation [data-behaviour='geo-locate'] {
-  display: block;
-}
-
-
-.form {
-  padding: 50px;
-  position: relative;
-}
-
-.form .loading-message {
-  background: rgba(255, 255, 255, 0.6);
-  bottom: 0;
-  display: none;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.form.is-loading .loading-message {
-  display: block;
-}
+@import '_layout.less';
+@import '_form.less';
